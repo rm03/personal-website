@@ -1,0 +1,109 @@
+.container {
+    padding: 0 2rem;
+  }
+  
+  .main {
+    min-height: 80vh;
+    /*padding: 4rem 0;*/
+    padding: 3rem;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+  }
+
+  .main a {
+    padding: 10px 0px;
+    float: left;
+    display: inline;
+  }
+  
+  .main h1 {
+    font-size: 2.2em;
+  }
+  
+  .main h2 {
+    font-size: 1.2em;
+    padding: 10px 0px;
+    float: left;
+    display: inline;
+  }
+  
+  .main h3 {
+    font-size: 1em;
+  }
+
+  .main ul {
+    display: inline;
+    float: left;
+  }
+
+  .main li {
+    padding: 3px 0px;
+  }
+  
+  .borderCircle {
+    border-radius: 20px;
+  }
+  
+  .imageWrapperWide {
+    margin: 1.2em;
+    float: left;
+    display: inline;
+    text-align: center;
+  }
+
+  .imageWrapperWide a {
+    color: grey !important;
+    font-style: italic;
+    width: 100%;
+  }
+  
+  .floatContainer {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .info {
+    float: left;
+    display: inline;
+  }
+
+  .funFactBold {
+    font-weight: 550;
+  }
+
+  .aboutBold:hover {
+    color: #0d6efd !important;
+  }
+
+  .imageWrapper {
+    display: none;
+   }
+
+  @media screen and (max-width: 860px) {
+    .imageWrapperWide {
+        display: none;
+    }
+    .imageWrapper {
+        margin: 1.2em;
+        float: left;
+        display: inline;
+        text-align: center;
+      }
+    
+      .imageWrapper a {
+        color: grey !important;
+        font-style: italic;
+        width: 100%;
+      }
+  }
+
+  @media screen and (max-width: 460px) {
+    .main {
+        padding: 3rem 0;
+    }
+
+  }
