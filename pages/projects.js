@@ -47,21 +47,6 @@ export default function Projects() {
     <h1 className={styles.title}>Projects</h1>
     <Row xs={1} md="auto" className={styles.projects}>
         <Col>
-            <Card bg="dark" key="Dark" text="white" style={{ flex: 1 }}>
-            <Card.Body>
-                <Card.Title>Coming soon...</Card.Title>
-                <Card.Text>
-                    <i>September 2022 – Present</i>
-                </Card.Text>
-                <Card.Text as="div">
-                <ul>
-                    <li>Building a platform to connect Penn students that are looking to buy event tickets on the resale market</li>
-                </ul>
-                </Card.Text>
-                </Card.Body>
-            </Card>
-            </Col>
-        <Col>
         <Card bg="dark" key="Dark" text="white" style={{ flex: 1 }}>
         <Card.Body>
             <Card.Title>Chess</Card.Title>
