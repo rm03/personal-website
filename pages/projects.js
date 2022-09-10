@@ -49,13 +49,30 @@ export default function Projects() {
         <Col>
         <Card bg="dark" key="Dark" text="white" style={{ flex: 1 }}>
         <Card.Body>
+            <Card.Title>Top 10 – The Roku Channel</Card.Title>
+            <Card.Text>
+                <i>July 2022</i>
+            </Card.Text>
+            <Card.Text as="div">
+            <ul>
+                <li>Participated in Roku's company-wide hackathon with team consisting of interns and FTEs dispersed across 4 time zones</li>
+                <li>Created a feature for The Roku Channel that displays the ten most viewed titles (TV shows, movies, and documentaries) in the user's region during the current week to increase viewership</li>
+                <li>Developed an API that pulls viewership data in real-time using Flask and Presto</li>
+            </ul>
+            </Card.Text>
+            </Card.Body>
+        </Card>
+        </Col>
+        <Col>
+        <Card bg="dark" key="Dark" text="white" style={{ flex: 1 }}>
+        <Card.Body>
             <Card.Title>Chess</Card.Title>
             <Card.Text>
                 <i>December 2021</i>
             </Card.Text>
             <Card.Text as="div">
             <ul>
-                <li>Built chess game from scratch using Java & Java Swing</li>
+                <li>Built chess game with fully functioning GUI from scratch using Java & Java Swing</li>
                 <li>Implemented complex game logic (check, castling, en passant, stalemate etc.)</li>
             </ul>
             </Card.Text>
