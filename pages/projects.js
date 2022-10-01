@@ -1,10 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 import styles from '../styles/Projects.module.css'
-import newPic from '../public/pic.png'
 import Card from 'react-bootstrap/Card'
-import CardGroup from 'react-bootstrap/CardGroup'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
