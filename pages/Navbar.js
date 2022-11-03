@@ -8,7 +8,7 @@ export default function CollapsibleNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Container>
-        <Navbar.Brand>rohan moniz</Navbar.Brand>
+        <Navbar.Brand>Rohan Moniz</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

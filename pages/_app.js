@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
@@ -9,7 +10,11 @@ config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
   return (
-      <><Navbar/><Component {...pageProps} /></>
+      <>
+      <Navbar/>
+      <Component {...pageProps} /> 
+      <Analytics />
+      </>
   )
 }
 
