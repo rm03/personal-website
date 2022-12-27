@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/About.module.css'
-import newPic from '../public/pic.png'
+import newPic from '../public/static/pic.png'
 
 
 export default function About() {
@@ -11,7 +11,7 @@ export default function About() {
       <Head>
         <title>About – Rohan Moniz</title>
         <meta name="description" content="My personal website" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -19,7 +19,7 @@ export default function About() {
       <div className={styles.floatContainer}>
         <div className={styles.about}>
         <a>
-            Hey! I’m a second-year student at the <strong className={styles.aboutBold}>University of Pennsylvania</strong> pursuing a Bachelor of Science in Engineering (BSE) in <strong className={styles.aboutBold}>Computer Science</strong>. I’m an avid learner and problem-solver, have an insatiable curiosity, and really enjoy working with others. In terms of technical skills, I am proficient in <strong className={styles.aboutBold}>Java</strong> and <strong className={styles.aboutBold}>Python</strong> and have experience with HTML, CSS, JavaScript, OCaml, and more (if you’re interested, click <Link href="/resume.pdf"><strong className={styles.aboutBold}>here</strong></Link>). I’m looking to improve, expand, and apply my skillset to solve real-world problems through projects and internships.
+            Hey! I’m a second-year student at the <strong className={styles.aboutBold}>University of Pennsylvania</strong> pursuing a Bachelor of Science in Engineering (BSE) in <strong className={styles.aboutBold}>Computer Science</strong>. I’m an avid learner and problem-solver, have an insatiable curiosity, and really enjoy working with others. In terms of technical skills, I am proficient in <strong className={styles.aboutBold}>Java</strong> and <strong className={styles.aboutBold}>Python</strong> and have experience with HTML, CSS, JavaScript, OCaml, and more (if you’re interested, click <Link href="/resume.pdf" legacyBehavior><strong className={styles.aboutBold}>here</strong></Link>). I’m looking to improve, expand, and apply my skillset to solve real-world problems through projects and internships.
         </a>
         <a>
             In my spare time, I enjoy running along the Schuylkill River, playing tennis, playing chess, watching Formula 1 races, keeping up-to-date with world news, exploring new places, reselling sneakers, and challenging my friends to a fun game of Super Smash Bros. 

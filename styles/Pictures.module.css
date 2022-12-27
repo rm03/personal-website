@@ -1,0 +1,32 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 80vh;
+  /*padding: 4rem 0;*/
+  padding: 3rem;
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  user-select: none;
+}
+
+.main h1 {
+  font-size: 2.2em;
+}
+
+.title {
+  padding: 10px 0px;
+  width: 75%;
+  align-self: center;
+}
+
+@media screen and (max-width: 460px) {
+  .main {
+      padding: 3rem 0;
+  }
+
+}

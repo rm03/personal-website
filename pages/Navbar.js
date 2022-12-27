@@ -12,16 +12,19 @@ export default function CollapsibleNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link href="/" passHref>
+            <Link href="/" passHref legacyBehavior>
               <Nav.Link>Home</Nav.Link>
             </Link>
-            <Link href="/about" passHref>
+            <Link href="/about" passHref legacyBehavior>
               <Nav.Link>About</Nav.Link>
             </Link>
-            <Link href="/projects" passHref>
-              <Nav.Link>Projects & Experience</Nav.Link>
+            <Link href="/projects" passHref legacyBehavior>
+              <Nav.Link>Projects</Nav.Link>
             </Link>
-            <Link href="/resume.pdf" passHref>
+            <Link href="/pictures" passHref legacyBehavior>
+              <Nav.Link>Pictures</Nav.Link>
+            </Link>
+            <Link href="/resume.pdf" passHref legacyBehavior>
               <Nav.Link>Résumé</Nav.Link>
             </Link>
           </Nav>

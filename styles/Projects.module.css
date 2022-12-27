@@ -20,6 +20,8 @@
 
   .title {
     padding: 10px 0px;
+    width: 75%;
+    align-self: center;
   }
 
   .card-text a:hover {
@@ -33,9 +35,20 @@
 
   }
 
+  @media screen and (max-width: 1072px) {
+    .img-big {
+      display: none;
+    }
+
+  }
+
   .experience, .projects {
     display: flex;
     flex-direction: column;
     padding-top: 0.4rem;
     padding-right: 0px;
   } 
+
+  .gh:hover {
+    color: white;
+  }
