@@ -20,7 +20,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.floatContainer}>
           <div className={styles.imageWrapper}>
-            <Image className={styles.borderCircle} src={profilePic} height={144} width={144} draggable={false}></Image>
+            <Image className={styles.borderCircle} src={profilePic} height={144} width={144} draggable={false} placeholder='blur'></Image>
           </div>
           <div className={styles.info}>
             <h2>Hi, I'm</h2>

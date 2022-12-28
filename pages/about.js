@@ -146,7 +146,7 @@ export default function About() {
 
           </div>
           <div className={styles.imageWrapperWide}>
-            <Image className={styles.borderCircle} src={newPic} layout="fixed" width={300} height={400} draggable={false}></Image>
+            <Image className={styles.borderCircle} src={newPic} layout="fixed" width={300} height={400} draggable={false} placeholder='blur'></Image>
             <a>Yosemite National Park, Summer 2022</a>
           </div>
         </div>
