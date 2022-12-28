@@ -49,7 +49,9 @@
   }
   
   .imageWrapperWide {
-    margin: 1.2em;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    margin-bottom: 1.2em;
     float: left;
     display: inline;
     text-align: center;
@@ -106,4 +108,89 @@
         padding: 3rem 0;
     }
 
+  }
+
+  @keyframes quiet {
+    25%{
+      transform: scaleY(.6);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.8);
+    }
+  }
+  
+  @keyframes normal {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.6);
+    }
+  }
+  @keyframes loud {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(1.2);
+    }
+  }
+
+  .np {
+    margin-bottom: 0;
+    width: max-content;
+    font-size: 0.75em;
+  }
+
+  .artist {
+    font-size: 0.75em;
+  }
+  
+  .boxContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 14px;
+    --boxSize: 2px;
+    --gutter: 1px;
+    width: calc((var(--boxSize) + var(--gutter)) * 5);
+  }
+  
+  .box{
+    transform: scaleY(.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: white;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+  }
+  
+  .box1{
+    animation-name: quiet;
+  }
+  
+  .box2{
+    animation-name: normal;
+  }
+  
+  .box3{
+    animation-name: quiet;
+  }
+  
+  .box4{
+    animation-name: loud;
+  }
+  
+  .box5{
+    animation-name: quiet;
   }
