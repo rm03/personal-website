@@ -46,7 +46,7 @@ export default function About() {
               In my spare time, I enjoy running along the Schuylkill River, playing tennis, playing chess, watching Formula 1 races, keeping up-to-date with world news, exploring new places, reselling sneakers, and challenging my friends to a fun game of Super Smash Bros.
             </a>
             <div className={styles.imageWrapper}>
-              <Image className={styles.borderCircle} src={newPic} layout="fixed" width={300} height={400} draggable={false}></Image>
+              <Image className={styles.borderCircle} src={newPic} width={300} height={400} draggable={false} alt='Yosemite National Park, Summer 2022'></Image>
               <a>Yosemite National Park, Summer 2022</a>
             </div>
             <h2>Some fun facts:</h2>
@@ -72,12 +72,12 @@ export default function About() {
                           </Card.Text>
                         </Col>
                         <Col xs className='ps-1 pe-0'>
-                          <div class={styles.boxContainer} style={{ visibility: waveVisibility }}>
-                            <div class={[styles.box, styles.box1].join(" ")}></div>
-                            <div class={[styles.box, styles.box2].join(" ")}></div>
-                            <div class={[styles.box, styles.box3].join(" ")}></div>
-                            <div class={[styles.box, styles.box4].join(" ")}></div>
-                            <div class={[styles.box, styles.box5].join(" ")}></div>
+                          <div className={styles.boxContainer} style={{ visibility: waveVisibility }}>
+                            <div className={[styles.box, styles.box1].join(" ")}></div>
+                            <div className={[styles.box, styles.box2].join(" ")}></div>
+                            <div className={[styles.box, styles.box3].join(" ")}></div>
+                            <div className={[styles.box, styles.box4].join(" ")}></div>
+                            <div className={[styles.box, styles.box5].join(" ")}></div>
                           </div>
                         </Col>
                       </Row>
@@ -106,6 +106,7 @@ export default function About() {
                                 width={50}
                                 height={50}
                                 style={{ borderRadius: 'calc(0.375rem - 1px)' }}
+                                alt={track.title}
                               />
                             </Link>
                           </Col>
@@ -133,6 +134,7 @@ export default function About() {
                               width={50}
                               height={50}
                               style={{ borderRadius: 'calc(0.375rem - 1px)' }}
+                              alt={artist.name}
                             />
                           </Link>
                         </Col><Col><Card.Text>{artist.name}</Card.Text></Col></Row>
@@ -146,7 +148,7 @@ export default function About() {
 
           </div>
           <div className={styles.imageWrapperWide}>
-            <Image className={styles.borderCircle} src={newPic} layout="fixed" width={300} height={400} draggable={false} placeholder='blur'></Image>
+            <Image className={styles.borderCircle} src={newPic} width={300} height={400} draggable={false} placeholder='blur' alt='Yosemite National Park, Summer 2022'></Image>
             <a>Yosemite National Park, Summer 2022</a>
           </div>
         </div>

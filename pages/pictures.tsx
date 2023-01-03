@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Pictures.module.css'
-import Gallery from "react-photo-gallery-next";
-import { useCallback } from 'react';
+import Gallery, { RenderImageProps } from "react-photo-gallery-next";
+import { useCallback, ComponentType } from 'react';
 import img0542 from '../public/static/IMG_0542.jpeg';
 import img0546 from '../public/static/IMG_0546.jpeg';
 import img3989 from '../public/static/IMG_3989.jpeg';
@@ -323,20 +323,18 @@ mp.set('img6796', img6796);
 
 
 export default function Pictures() {
-  const imageRenderer = useCallback(
-    ({ index, key, photo }) => (
+  const imageRenderer : ComponentType<RenderImageProps<{}>> = useCallback(
+    ({ photo }) => (
       <div style={{ margin: '2px', height: photo.height, width: photo.width, overflow: 'hidden', position: 'relative' }}>
         <Image
-          key={key}
-          index={index}
           src={mp.get(photo.src.substring(photo.src.lastIndexOf('/') + 1).replace('_', '').substring(0, 7).toLowerCase())}
           width={photo.width}
           height={photo.height}
           placeholder='blur'
+          alt='img'
         />
       </div>
-
-    )
+    ), []
   );
 
   return (

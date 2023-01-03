@@ -71,7 +71,7 @@ export default function Projects() {
                                     <Image src={pennbookProject} style={{
                                         maxWidth: '100%',
                                         height: 'auto',
-                                      }} placeholder='blur' />
+                                      }} placeholder='blur' alt='pennbook' />
                                 </Col>
                             </Row>
                         </Card.Body>
@@ -106,7 +106,7 @@ export default function Projects() {
                                     <Image src={trcProject} style={{
                                         maxWidth: '100%',
                                         height: 'auto',
-                                      }} placeholder='blur' />
+                                      }} placeholder='blur' alt='trcproject' />
                                 </Col>
                             </Row>
                         </Card.Body>
@@ -139,7 +139,7 @@ export default function Projects() {
                                     <Image src={chessProject} style={{
                                         maxWidth: '80%',
                                         height: 'auto',
-                                      }} placeholder='blur' />
+                                      }} placeholder='blur' alt='chessproject' />
                                 </Col>
                             </Row>
                         </Card.Body>
@@ -176,7 +176,7 @@ export default function Projects() {
                                     <Image src={vapeescapeProject} style={{
                                         maxWidth: '80%',
                                         height: 'auto',
-                                      }} placeholder='blur' />
+                                      }} placeholder='blur' alt='vapeescapeproject' />
                                 </Col>
                             </Row>
                         </Card.Body>
