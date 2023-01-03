@@ -1,10 +1,11 @@
 import { topArtists } from "../../lib/spotify";
+import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(req, res) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const response = await topArtists();
     const { items } = await response.json();
 
-    const artists = items.slice(0, 5).map((artist) => ({
+    const artists = items.slice(0, 5).map((artist: any) => ({
         name: artist.name,
         url: artist.external_urls.spotify,
         coverImage: artist.images[1],

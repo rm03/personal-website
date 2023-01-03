@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import useSWR from "swr";
 
-const fetcher = url => fetch(url).then(r => r.json());
+const fetcher = (url: string) => fetch(url).then(r => r.json());
 
 export default function About() {
   const { data: song } = useSWR("/api/currentsong", fetcher, {
@@ -94,7 +94,7 @@ export default function About() {
                   <Card.Body>
                     <Card.Title className='mb-3'>Top Songs</Card.Title>
                     <Card.Text>
-                      {topTracks?.map((track, index) => (
+                      {topTracks?.map((track: any, index: string) => (
                         <Row className='mb-2 align-items-center'>
                           <Col md="auto" className='pe-0'>
                             <Link href={track.url}>
@@ -122,7 +122,7 @@ export default function About() {
                 <Card className="bg-dark text-white">
                   <Card.Body>
                     <Card.Title className='mb-3'>Top Artists</Card.Title>
-                    {topArtists?.map((artist, index) => (
+                    {topArtists?.map((artist: any, index: string) => (
                       <Row className='mb-2 align-items-center'>
                         <Col md="auto" className='pe-0'>
                           <Link href={artist.url}>

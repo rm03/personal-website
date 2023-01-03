@@ -323,7 +323,7 @@ mp.set('img6796', img6796);
 
 
 export default function Pictures() {
-  const imageRenderer : ComponentType<RenderImageProps<{}>> = useCallback(
+  const imageRenderer: ComponentType<RenderImageProps<{}>> = useCallback(
     ({ photo }) => (
       <div style={{ margin: '2px', height: photo.height, width: photo.width, overflow: 'hidden', position: 'relative' }}>
         <Image

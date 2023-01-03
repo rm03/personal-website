@@ -31,22 +31,22 @@ export default function Home() {
         <div className={styles.socials}>
           <li className={styles.email}>
             <Link href="mailto:rmoniz@sas.upenn.edu" legacyBehavior>
-              <FontAwesomeIcon icon={ faEnvelopeSquare } size="2x"/>
+              <FontAwesomeIcon icon={faEnvelopeSquare} size="2x" />
             </Link>
           </li>
           <li className={styles.linkedin}>
             <Link href="https://www.linkedin.com/in/rohan-moniz/" legacyBehavior>
-              <FontAwesomeIcon icon={ faLinkedin } size="2x"/>
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </Link>
           </li>
           <li className={styles.github}>
             <Link href="https://www.github.com/rm03" legacyBehavior>
-              <FontAwesomeIcon icon={ faGithubSquare } size="2x"/>
+              <FontAwesomeIcon icon={faGithubSquare} size="2x" />
             </Link>
           </li>
           <li className={styles.spotify}>
             <Link href="https://open.spotify.com/user/musicmaster522" legacyBehavior>
-              <FontAwesomeIcon icon={ faSpotify } size="2x"/>
+              <FontAwesomeIcon icon={faSpotify} size="2x" />
             </Link>
           </li>
         </div>

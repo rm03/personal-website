@@ -1,6 +1,7 @@
 import { currentlyPlayingSong, lastPlayedSong } from "../../lib/spotify";
+import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(req, res) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const response = await currentlyPlayingSong();
 
     if (response.status === 204 || response.status > 400) {
@@ -8,7 +9,7 @@ export default async function handler(req, res) {
         const song = await response2.json();
         const isPlaying = false;
         const title = song.items[0].track.name;
-        const artist = song.items[0].track.artists.map((_artist) => _artist.name).join(", ");
+        const artist = song.items[0].track.artists.map((_artist: any) => _artist.name).join(", ");
         const album = song.items[0].track.album.name;
         const albumImageUrl = song.items[0].track.album.images[0].url;
         const songUrl = song.items[0].track.external_urls.spotify;
@@ -36,7 +37,7 @@ export default async function handler(req, res) {
         const song = await response2.json();
         const isPlaying = false;
         const title = song.items[0].track.name;
-        const artist = song.items[0].track.artists.map((_artist) => _artist.name).join(", ");
+        const artist = song.items[0].track.artists.map((_artist: any) => _artist.name).join(", ");
         const album = song.items[0].track.album.name;
         const albumImageUrl = song.items[0].track.album.images[0].url;
         const songUrl = song.items[0].track.external_urls.spotify;
@@ -59,7 +60,7 @@ export default async function handler(req, res) {
 
     const isPlaying = song.is_playing;
     const title = song.item.name;
-    const artist = song.item.artists.map((_artist) => _artist.name).join(", ");
+    const artist = song.item.artists.map((_artist: any) => _artist.name).join(", ");
     const album = song.item.album.name;
     const albumImageUrl = song.item.album.images[0].url;
     const songUrl = song.item.external_urls.spotify;

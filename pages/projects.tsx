@@ -32,9 +32,9 @@ export default function Projects() {
                             <Row>
                                 <Col>
                                     <Card.Title>PennBook&nbsp;&nbsp;
-                                    <Link href="https://github.com/rm03/pennbook" className={styles.gh}>
-              <FontAwesomeIcon icon={ faGithub }   />
-            </Link>
+                                        <Link href="https://github.com/rm03/pennbook" className={styles.gh}>
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </Link>
                                     </Card.Title>
 
                                     <Card.Text>
@@ -71,7 +71,7 @@ export default function Projects() {
                                     <Image src={pennbookProject} style={{
                                         maxWidth: '100%',
                                         height: 'auto',
-                                      }} placeholder='blur' alt='pennbook' />
+                                    }} placeholder='blur' alt='pennbook' />
                                 </Col>
                             </Row>
                         </Card.Body>
@@ -106,7 +106,7 @@ export default function Projects() {
                                     <Image src={trcProject} style={{
                                         maxWidth: '100%',
                                         height: 'auto',
-                                      }} placeholder='blur' alt='trcproject' />
+                                    }} placeholder='blur' alt='trcproject' />
                                 </Col>
                             </Row>
                         </Card.Body>
@@ -116,9 +116,9 @@ export default function Projects() {
                             <Row>
                                 <Col>
                                     <Card.Title>Chess&nbsp;&nbsp;
-                                    <Link href="https://github.com/rm03/java-chess" className={styles.gh}>
-                                    <FontAwesomeIcon icon={ faGithub }   />
-                                  </Link>
+                                        <Link href="https://github.com/rm03/java-chess" className={styles.gh}>
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </Link>
                                     </Card.Title>
                                     <Card.Text>
                                         <small><i>December 2021</i></small>
@@ -139,7 +139,7 @@ export default function Projects() {
                                     <Image src={chessProject} style={{
                                         maxWidth: '80%',
                                         height: 'auto',
-                                      }} placeholder='blur' alt='chessproject' />
+                                    }} placeholder='blur' alt='chessproject' />
                                 </Col>
                             </Row>
                         </Card.Body>
@@ -154,7 +154,7 @@ export default function Projects() {
                                         <small><i>July 2019 – June 2020</i></small>
                                     </Card.Text>
                                     <Card.Text as="div">
-                                        An affordable and practical solution for schools and businesses to be notified of vaping or smoking in unauthorized areas such as bathrooms. Consists of basic iOS app alert notification system connected to Raspberry Pi-based prototype. 
+                                        An affordable and practical solution for schools and businesses to be notified of vaping or smoking in unauthorized areas such as bathrooms. Consists of basic iOS app alert notification system connected to Raspberry Pi-based prototype.
                                         <br></br><br></br>Developed by four-person team during Summer 2019. Created a comprehensive twenty-page business plan for commercializing the product; analyzed the competitive landscape, determined product positioning and conceptualized a go-to-market strategy including a tailored pricing plan and a two-year budget. <br></br><br></br><b>Winner of "Eliminating and Reducing Teen Vaping" category at the 2019-20 Conrad Challenge</b>, a global STEM innovation competition.
                                     </Card.Text>
                                     <div className='mt-3 tags'>
@@ -176,7 +176,7 @@ export default function Projects() {
                                     <Image src={vapeescapeProject} style={{
                                         maxWidth: '80%',
                                         height: 'auto',
-                                      }} placeholder='blur' alt='vapeescapeproject' />
+                                    }} placeholder='blur' alt='vapeescapeproject' />
                                 </Col>
                             </Row>
                         </Card.Body>
