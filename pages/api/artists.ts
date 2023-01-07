@@ -1,7 +1,7 @@
-import { topArtists } from "../../lib/spotify";
-import { NextApiRequest, NextApiResponse } from "next";
+import { topArtists } from '../../lib/spotify';
+import { NextApiRequest, NextApiResponse } from 'next';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(_req: NextApiRequest, res: NextApiResponse) {
     const response = await topArtists();
     const { items } = await response.json();
 
@@ -13,8 +13,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }));
 
     res.setHeader(
-        "Cache-Control",
-        "public, s-maxage=86400, stale-while-revalidate=43200"
+        'Cache-Control',
+        'public, s-maxage=86400, stale-while-revalidate=43200'
     );
 
     return res.status(200).json(artists);

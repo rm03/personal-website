@@ -4,10 +4,8 @@
 
 .main {
   min-height: 80vh;
-  /*padding: 4rem 0;*/
   padding: 1rem 0 4rem 0;
   color: white;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +35,7 @@
   display: inline;
 }
 
-.floatContainer {
+.content {
   justify-content: center;
   display: flex;
   align-items: center;
@@ -45,7 +43,6 @@
 
 .info {
   float: left;
-  display: inline;
 }
 
 .socials {
@@ -65,13 +62,13 @@
   transition: 0.4s;
 }
 
-.socials .github:hover{
+.socials .github:hover {
   color: #6e5494 !important;
   transform: scale(1.2);
   transition: 0.4s;
 }
 
-.socials .email:hover{
+.socials .email:hover {
   color: #58b9f2 !important;
   transform: scale(1.2);
   transition: 0.4s;

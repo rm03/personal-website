@@ -1,8 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Pictures.module.css'
-import Gallery, { RenderImageProps } from "react-photo-gallery-next";
-import { useCallback, ComponentType } from 'react';
+import styles from '../styles/Pictures.module.css';
 import img0542 from '../public/static/IMG_0542.jpeg';
 import img0546 from '../public/static/IMG_0546.jpeg';
 import img3989 from '../public/static/IMG_3989.jpeg';
@@ -47,6 +43,14 @@ import img6734 from '../public/static/IMG_6734.jpeg';
 import img6779 from '../public/static/IMG_6779.jpeg';
 import img6952 from '../public/static/IMG_6952.jpeg';
 import img6796 from '../public/static/IMG_6796.jpeg';
+import img7042 from '../public/static/IMG_7042.jpeg';
+import img7046 from '../public/static/IMG_7046.jpeg';
+import img7054 from '../public/static/IMG_7054.jpeg';
+import Head from 'next/head';
+import Image from 'next/image';
+import Gallery, { RenderImageProps } from 'react-photo-gallery-next';
+import { useCallback, ComponentType } from 'react';
+
 
 const photos = [
   {
@@ -270,10 +274,25 @@ const photos = [
     src: '/static/IMG_6952.jpeg',
     width: 3,
     height: 4
+  },
+  {
+    src: '/static/IMG_7042.jpeg',
+    width: 3,
+    height: 4
+  },
+  {
+    src: '/static/IMG_7046.jpeg',
+    width: 3,
+    height: 4
+  },
+  {
+    src: '/static/IMG_7054.jpeg',
+    width: 3,
+    height: 4
   }
 ].reverse()
 
-// bruh moment, very bad code
+// TODO: find an less messy way to do this with static imports
 const mp = new Map();
 mp.set('img3989', img3989);
 mp.set('img4313', img4313);
@@ -292,7 +311,6 @@ mp.set('img5150', img5150);
 mp.set('img5160', img5160);
 mp.set('img5393', img5393);
 mp.set('img5492', img5492);
-
 mp.set('img5721', img5721);
 mp.set('img5750', img5750);
 mp.set('img5776', img5776);
@@ -320,6 +338,9 @@ mp.set('img6734', img6734);
 mp.set('img6779', img6779);
 mp.set('img6952', img6952);
 mp.set('img6796', img6796);
+mp.set('img7042', img7042);
+mp.set('img7046', img7046);
+mp.set('img7054', img7054);
 
 
 export default function Pictures() {
@@ -341,10 +362,9 @@ export default function Pictures() {
     <div className={styles.container}>
       <Head>
         <title>Pictures – Rohan Moniz</title>
-        <meta name="description" content="My personal website" />
-        <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+        <meta name='description' content='My personal website' />
+        <link rel='icon' type='image/x-icon' href='/static/favicon.ico' />
       </Head>
-
       <main className={styles.main}>
         <h1>Pictures</h1>
         <Gallery photos={photos} renderImage={imageRenderer} />
