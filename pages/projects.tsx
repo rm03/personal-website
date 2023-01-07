@@ -36,6 +36,7 @@ export default function Projects() {
                         imageWidth={100} />
                     <Project
                         name='Chess'
+                        githubUrl='https://github.com/rm03/chess'
                         duration='December 2021'
                         description={['Chess game built from scratch with fully functioning GUI and complex game logic (check, castling, en passant, stalemate, etc). Final project for Programming Languages and Techniques I (CIS 120).']}
                         skills={['Java', 'Java Swing']}
