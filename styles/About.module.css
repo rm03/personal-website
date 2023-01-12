@@ -29,6 +29,7 @@
 
 .main ul {
   float: left;
+  width: 100%;
 }
 
 .main li {
